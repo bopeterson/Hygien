@@ -25,7 +25,7 @@ const _Environments = {
     creditsViewColor: 'white',
     statusBarColorLandscape: 'black',
     statusBarColorPortrait: 'black',
-    playTitleFrame: false,
+    playTitleFrame: true,
   },
   android: {
     platform: 'android',
