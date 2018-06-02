@@ -25,7 +25,7 @@ const _Environments = {
     creditsViewColor: 'white',
     statusBarColorLandscape: 'black',
     statusBarColorPortrait: 'black',
-
+    playTitleFrame: false,
   },
   android: {
     platform: 'android',
@@ -49,6 +49,7 @@ const _Environments = {
     creditsViewColor: 'white',
     statusBarColorLandscape: 'black',
     statusBarColorPortrait: 'black',
+    playTitleFrame: true,
   }
   
 };

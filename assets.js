@@ -99,7 +99,7 @@ const _Assets = {
   },
   soundFiles: {
     hands:   [
-      'tada.mp3', //only used while testing
+      'hands0.mp3', //only used while testing
       'hands1.mp3',
       'hands2.mp3',
       'hands3.mp3',
@@ -107,7 +107,7 @@ const _Assets = {
       'hands5.mp3',
     ],
     shower:   [
-      'tada.mp3', //only used while testing
+      'shower0.mp3', //only used while testing
       'shower1.mp3',
       'shower2.mp3',
       'shower3.mp3',
@@ -115,7 +115,7 @@ const _Assets = {
       'shower5.mp3',
     ],
     shave: [
-      'tada.mp3', //only used while testing
+      'shave0.mp3', //only used while testing
       'shave1.mp3',
       'shave2.mp3',
       'shave3.mp3',
@@ -123,7 +123,7 @@ const _Assets = {
       'shave5.mp3',
     ],
     hair: [
-      'tada.mp3', //only used while testing
+      'hair0.mp3', //only used while testing
       'hair1.mp3',
       'hair2.mp3',
       'hair3.mp3',
@@ -131,7 +131,7 @@ const _Assets = {
       'hair5.mp3',
     ],
     pad: [
-      'tada.mp3', //only used while testing
+      'pad0.mp3', //only used while testing
       'pad1.mp3',
       'pad2.mp3',
       'pad3.mp3',
@@ -139,7 +139,7 @@ const _Assets = {
       'pad5.mp3',
     ],
     wc: [
-      'tada.mp3', //only used while testing
+      'wc0.mp3', //only used while testing
       'wc1.mp3',
       'wc2.mp3',
       'wc3.mp3',
@@ -147,7 +147,7 @@ const _Assets = {
       'wc5.mp3',
     ],
     clean: [
-      'tada.mp3', //only used while testing
+      'clean0.mp3', //only used while testing
       'clean1.mp3',
       'clean2.mp3',
       'clean3.mp3',

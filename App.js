@@ -322,10 +322,11 @@ class MainView extends React.Component {
   }
 
   componentDidMount() {
-    //xxx this seems to work alright. add as configuration. also add in Vader
-    clearTimeout(this.speakerTimerID);
-    clearTimeout(this.speakerTimer2ID);
-    this.delayedPlay(this.state.activeFrame,Environment.playDelay1,Environment.playDelay2);
+    if (Environment.playTitleFrame) {
+      clearTimeout(this.speakerTimerID);
+      clearTimeout(this.speakerTimer2ID);
+      this.delayedPlay(this.state.activeFrame,Environment.playDelay1,Environment.playDelay2);
+    }
   }
 
   componentWillUnmount() {
@@ -353,7 +354,7 @@ class MainView extends React.Component {
       clearTimeout(this.speakerTimerID);
       clearTimeout(this.speakerTimer2ID);
       //don't play sound when moved to start frame
-      if (this.state.activeFrame>=0) { //xxx, should be =0 if first frame isnt't played. Add as configuration, also in Vader
+      if (this.state.activeFrame>0 || Environment.playTitleFrame) {
         this.delayedPlay(this.state.activeFrame,Environment.playDelay1,Environment.playDelay2);
       }
     }
@@ -381,7 +382,7 @@ class MainView extends React.Component {
   }
 
   handlePageNumberPress(frame) {
-    if (!this.state.speaking && this.state.activeFrame==frame && frame!=0) {
+    if (!this.state.speaking && this.state.activeFrame==frame && (frame>0 || Environment.playTitleFrame)) {
       this.delayedPlay(frame,1,1);
     }
   }
