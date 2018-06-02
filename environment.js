@@ -18,7 +18,7 @@ const _Environments = {
     showLog: false,
     showBookTitle: true,
     statusBarHeight: 24,
-    buttonColor: '#fecd0b', //red '#FF5959', yellow '#f4c053', 
+    buttonColor: '#fecd0b', //#fecd0b red '#FF5959', yellow '#f4c053', 
     textColor: '#fecd0b',//'#fecd0b','#FF5959', yellow '#f4c053',bonasignum: '#fecd0b'
     mainViewColor: 'black',
     startViewColor: 'black',
