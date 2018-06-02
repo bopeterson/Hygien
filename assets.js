@@ -1,5 +1,6 @@
 const _Assets = {
-  mainTitleText: 'Så gör man - Hygien',
+  mainTitleTextLandscape: 'Så gör man - Hygien',
+  mainTitleTextPortrait: 'Så gör man\nHygien',  
   mainBookName: 'brush', //number of frames in this book defines the size of the indicators
   bookOrder: [
     'brush',

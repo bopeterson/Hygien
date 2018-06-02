@@ -63,6 +63,7 @@ const speakerWidth = indicatorWidth*0.8;
 
 //size constants for start screen
 const imageBlockTextSize = moderateScale(16,0.3);
+const titleTextSize = moderateScale(24,0.9);
 const imageBlockTextMaxRows = 2;
 const imageBlockTextHeight = imageBlockTextSize * imageBlockTextMaxRows * 1.3; //1.1875 minimum factor on ios
 //Landscape
@@ -215,7 +216,8 @@ const styles = StyleSheet.create({
     //fontFamily:'Futura', //'Iowan Old Style', 
     //fontWeight: 'bold',
     color: Environment.textColor,
-    fontSize:moderateScale(28,0.9),
+    fontSize:titleTextSize,
+    textAlign:'center',
   },
 
   imageButtonTouchable: {
@@ -646,7 +648,7 @@ class StartScreen extends React.Component {
               <ImageButton onImagePress={this.handleImagePress} bookNo={3} width={imageButtonImageMaxHeightLandscape}></ImageButton>
             </View>
             <View style={[styles.landscapeStartMainTitle]}>
-                <TitleText onTitlePress={this.handleTitlePress} source={Assets.mainTitleImage} height={titleTextHeightLandscape} />
+                <TitleText onTitlePress={this.handleTitlePress} text={Assets.mainTitleTextLandscape} height={titleTextHeightLandscape} />
             </View>
             <View style={[styles.landscapeStartImageBlock]}>
               <ImageButton onImagePress={this.handleImagePress} bookNo={4} width={imageButtonImageMaxHeightLandscape}></ImageButton>
@@ -670,7 +672,7 @@ class StartScreen extends React.Component {
               <ImageButton onImagePress={this.handleImagePress} bookNo={3} width={imageButtonImageMaxHeightPortrait}></ImageButton>
             </View>
             <View style={[styles.portraitStartMainTitle]}>
-              <TitleText onTitlePress={this.handleTitlePress} source={Assets.mainTitleImage} height={titleTextHeightPortrait} />
+              <TitleText onTitlePress={this.handleTitlePress} text={Assets.mainTitleTextPortrait} height={titleTextHeightPortrait} />
             </View>
             <View style={[styles.portraitStartImageBlock]}>
               <ImageButton onImagePress={this.handleImagePress} bookNo={4} width={imageButtonImageMaxHeightPortrait}></ImageButton>
@@ -709,7 +711,7 @@ class TitleText extends React.Component {
           style={[styles.titleText,{height:this.props.height}]} 
           resizeMode = {'contain'} 
         >
-          {Assets.mainTitleText}
+          {this.props.text}
         </Text>
       </TouchableOpacity>
     )
