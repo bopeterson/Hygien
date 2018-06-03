@@ -27,7 +27,7 @@ const Assets = require('./assets.js');
 
 //hack to get size of logo because Image.getSize() does not work for static images (yet)
 const {width:logoWidth, height:logoHeight} = resolveAssetSource(Assets.logo);
-console.log(logoWidth,logoHeight);
+//console.log(logoWidth,logoHeight);
 // Enable playback in silence mode (iOS only)
 Sound.setCategory('Playback');
 

@@ -1322,7 +1322,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "se.bonasignum.doitlikethat-hygiene";
+				PRODUCT_BUNDLE_IDENTIFIER = se.bonasignum.doitlikethathygiene;
 				PRODUCT_NAME = Hygien;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1347,7 +1347,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "se.bonasignum.doitlikethat-hygiene";
+				PRODUCT_BUNDLE_IDENTIFIER = se.bonasignum.doitlikethathygiene;
 				PRODUCT_NAME = Hygien;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
