@@ -29,6 +29,7 @@
 		520473532080D00900F5B022 /* brush3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5204734D2080D00800F5B022 /* brush3.mp3 */; };
 		520473542080D00900F5B022 /* brush5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5204734E2080D00900F5B022 /* brush5.mp3 */; };
 		520473552080D00900F5B022 /* brush4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5204734F2080D00900F5B022 /* brush4.mp3 */; };
+		52621D6220C58CA5005392CB /* shower5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52621D6120C58CA5005392CB /* shower5.mp3 */; };
 		52FAEFF9209CF05A00B431D7 /* wc1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52FAEFAA209CF05300B431D7 /* wc1.mp3 */; };
 		52FAEFFA209CF05A00B431D7 /* hands4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52FAEFD1209CF05300B431D7 /* hands4.mp3 */; };
 		52FAEFFB209CF05A00B431D7 /* clean2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52FAEFD2209CF05300B431D7 /* clean2.mp3 */; };
@@ -379,6 +380,7 @@
 		5204734D2080D00800F5B022 /* brush3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = brush3.mp3; sourceTree = "<group>"; };
 		5204734E2080D00900F5B022 /* brush5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = brush5.mp3; sourceTree = "<group>"; };
 		5204734F2080D00900F5B022 /* brush4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = brush4.mp3; sourceTree = "<group>"; };
+		52621D6120C58CA5005392CB /* shower5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shower5.mp3; sourceTree = "<group>"; };
 		52FAEFAA209CF05300B431D7 /* wc1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wc1.mp3; sourceTree = "<group>"; };
 		52FAEFD1209CF05300B431D7 /* hands4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hands4.mp3; sourceTree = "<group>"; };
 		52FAEFD2209CF05300B431D7 /* clean2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clean2.mp3; sourceTree = "<group>"; };
@@ -650,6 +652,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				52621D6120C58CA5005392CB /* shower5.mp3 */,
 				52FAEFD9209CF05400B431D7 /* clean0.mp3 */,
 				52FAEFD6209CF05400B431D7 /* clean1.mp3 */,
 				52FAEFD2209CF05300B431D7 /* clean2.mp3 */,
@@ -1158,6 +1161,7 @@
 				52FAF012209CF05A00B431D7 /* shave2.mp3 in Resources */,
 				52FAF011209CF05A00B431D7 /* pad1.mp3 in Resources */,
 				52FAF021209CF05A00B431D7 /* shower2.mp3 in Resources */,
+				52621D6220C58CA5005392CB /* shower5.mp3 in Resources */,
 				52FAF00A209CF05A00B431D7 /* shower0.mp3 in Resources */,
 				520473542080D00900F5B022 /* brush5.mp3 in Resources */,
 				52FAF001209CF05A00B431D7 /* hair5.mp3 in Resources */,
