@@ -27,7 +27,6 @@ const Assets = require('./assets.js');
 
 //hack to get size of logo because Image.getSize() does not work for static images (yet)
 const {width:logoWidth, height:logoHeight} = resolveAssetSource(Assets.logo);
-//console.log(logoWidth,logoHeight);
 // Enable playback in silence mode (iOS only)
 Sound.setCategory('Playback');
 
@@ -303,6 +302,7 @@ class MainView extends React.Component {
     for (let i=0;i<Assets.soundFiles[this.book].length;i++) {
       var oneSound=new Sound(Assets.soundFiles[this.book][i], Sound.MAIN_BUNDLE, (error)=>{
         if (error) {
+          //console.log('failed to load the sound', error)
           return;
         }
       });
@@ -339,6 +339,9 @@ class MainView extends React.Component {
     if (this.state.speaking) {
       this.sounds[this.state.activeFrame].stop();
     }
+    for (let i=0;i<this.sounds.length;i++) {
+      this.sounds[i].release();
+    }
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -355,7 +358,7 @@ class MainView extends React.Component {
       //always clear queued sounds that havent't started when moved to a new frame
       clearTimeout(this.speakerTimerID);
       clearTimeout(this.speakerTimer2ID);
-      //don't play sound when moved to start frame
+      //don't play sound when moved to start frame if playTitleFrame is false
       if (this.state.activeFrame>0 || Environment.playTitleFrame) {
         this.delayedPlay(this.state.activeFrame,Environment.playDelay1,Environment.playDelay2);
       }
@@ -375,6 +378,9 @@ class MainView extends React.Component {
         this.sounds[frame].play((success) => {
           if (success) {
             this.setState({scrollEnabled:true,speaking:false});
+            if (Environment.autoScroll && frame<Assets.images[Assets.mainBookName].length) {
+              this.forcedScrollParent(frame+1);  
+            }
           } else {
             this.setState({scrollEnabled:true,speaking:false});
           }
