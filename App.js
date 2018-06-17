@@ -62,7 +62,7 @@ const speakerWidth = indicatorWidth*0.8;
 
 //size constants for start screen
 const imageBlockTextSize = moderateScale(16,0.3);
-const titleTextSize = moderateScale(24,0.9);
+const titleTextSize = moderateScale(21,0.9);
 const imageBlockTextMaxRows = 2;
 const imageBlockTextHeight = imageBlockTextSize * imageBlockTextMaxRows * 1.3; //1.1875 minimum factor on ios
 //Landscape

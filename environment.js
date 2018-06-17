@@ -26,7 +26,7 @@ const _Environments = {
     statusBarColorLandscape: 'black',
     statusBarColorPortrait: 'black',
     playTitleFrame: true,
-    autoScroll: true,
+    autoScroll: false,
   },
   android: {
     platform: 'android',
@@ -51,7 +51,7 @@ const _Environments = {
     statusBarColorLandscape: 'black',
     statusBarColorPortrait: 'black',
     playTitleFrame: true,
-    autoScroll: true,
+    autoScroll: false,
   }
   
 };
